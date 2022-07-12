@@ -20,7 +20,7 @@ return (<div>
             </Col>
 
  <Col sm={10} xs={10} style={{textAlign:"center",marginBottom:"15px",marginTop:'14px'}} >
- {props.data.images.map((e)=>{
+ {props.data.images?.map((e)=>{
     return(     <img src={imageUrlFor(e)} alt="" width="100%" key={e.key} />)
  })}
  </Col>
